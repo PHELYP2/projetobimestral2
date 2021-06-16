@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@500&display=swap');
+
+header :hover { color: rgb(31, 122, 140);}
+header a { text-decoration: none;}
+
+main h3:hover {color :rgb(31, 122, 140)}
+main a { text-decoration: none;}
+
+
+head{
+    font-family: 'Helvetica';
+}
+
+header {
+    box-shadow: 2px 2px 2px 1px rgb(31, 122, 140);
+    box-sizing: border-box;
+    background-color: rgb(2, 43, 58);
+    padding: 0px;
+    width: 100%;
+    position: fixed;
+    justify-content: initial;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    z-index: 1;
+}
+
+header h1 {
+
+    color: rgb(255, 255, 255);
+    justify-content: initial;
+    padding:  0px 130px 0px 30px;
+    font-size: 1.6em;
+
+}
+.hamburger{
+
+    font-size: 32px;
+    color: rgb(255,255 ,255 );
+    border: 1px solid rgb(255,255 ,255);
+    text-align: right;
+
+}
+header nav{
+    width: 70%;
+    height: 100%;
+    background-color:rgb(151, 216, 229);
+    position: fixed;
+    top: 0px;
+    left:-75%;
+    font-size: 1.3em;
+    box-shadow: rgb(30,30,40, 0.5) 1px 0px 5px;
+    transition: 1s left ease;
+}
+.show-nav{
+ left: 0 !important;
+}
+header nav ul {
+
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px 0px 60px;
+
+}
+
+header nav ul li {
+
+    padding: 0px auto 0px auto ;
+}
+
+header nav ul li a {
+    color:white;
+}
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(225, 229, 242);
+    margin: 0;
+}
+
+main {
+
+    background-color: white;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 65px 5px 5px 5px;
+    
+
+
+}
+main h1 {
+    text-align: center;
+    padding: 0px;
+    color: white;
+    background-color:rgb(31, 122, 140)
+}
+main section h2{
+    color:rgb(2, 43, 58);
+    
+}
+main ul h3{
+    justify-content: initial;
+    padding: 0px 0px auto auto;
+    font-size: 1.6em;
+    color:rgb(2, 43, 58);
+}
+
+.Subtitle {
+
+    text-align: center;
+    padding: 8px 0px;
+    
+
+}
+
+.Subtitle img {
+
+    max-width: 380px;
+    padding: 0px;
+    width: 100%;
+   
+
+}
+
+.Subtitle h2 {
+
+    font-size: 1.6em;
+    color: rgb(2, 43, 58);
+    
+
+}
+section h2{
+    color: rgb(31, 122, 140);
+    font-family: Helvetica;
+    text-align: center;
+}
+section p{
+    color: rgb(2, 43, 58);
+    font-family: Helvetica;
+    text-align: center; 
+}
+.imagem img{
+    display: block;
+    margin: auto;
+    width:100% ;
+}
+@media screen and (min-width: 420px){
+    header nav{
+        width: 100%;
+        background-color: transparent;
+        position: static;
+        font-size: 1.0em;
+        box-shadow: none;
+    
+    }
+    header nav ul {
+        flex-direction: row;
+        margin: 0px;
+    }
+    header nav ul li {
+        padding: 0px;
+        color:rgb(white);
+    } 
+    .hamburger {
+        display: none;
+    }
+} 
